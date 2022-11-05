@@ -6,7 +6,7 @@ import { useState } from 'react';
 const Menu = () => {
     const [data,setData]=useState([]);
     useEffect(()=>{
-        fetch("https://gabow-vercel-deploy-9c1m.vercel.app/api/getCookie")
+        fetch("http://localhost:3000/api/getCookie")
         .then(res=>res.json())
         .then(data=>setData(data))
     },[]);

@@ -1,15 +1,6 @@
 import con from "./config.js";
 function registrarUsuarios(req,res){
  
-    try{
-
-        con.connect();
-        console.log("se conecto a la bd");
-        
-    }
-    catch(err){
-        console.log(err);
-    }
     const {usuario,email,psw} = req.body;
     //console.log(usuario,email,psw);
     con.query(`insert into Usuarios values(?,?,?)` , [email,psw,usuario] , (e , r)=>{
