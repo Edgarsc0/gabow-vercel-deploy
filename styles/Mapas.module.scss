@@ -1,0 +1,21 @@
+.container{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 4rem;
+}
+.container2{
+    display: flex;
+    justify-content: center;
+}
+.buscador{
+    margin: 10px auto;
+    width: 70%;
+	height: 40px;
+    border-radius: 5px;
+    border: #573b8a solid;
+}
+@media (max-width:768px) {
+    .buscador{
+        width: 90%;
+    }
+  }
