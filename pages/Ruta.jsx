@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head'
 import styles from '../styles/Ruta.module.scss'
+import Link from 'next/link';
 
 const Ruta = () => {
     return (
@@ -19,8 +20,16 @@ const Ruta = () => {
                         <div>Origen: Primer piso</div>
                         <div>Lugar: Town Center El Rosario</div>
                         <br />
-                        <button type="button" className={styles.button}><a href="/Edificio">Modificar Destino</a></button>
-                        <button type="button" className={styles.button}><a href="/Mapas">Finalizar Ruta</a></button>
+                        <button type="button" className={styles.button}>
+                            <Link href="/Edificio">
+                                <a>Modificar Destino</a>
+                            </Link>
+                        </button>
+                        <button type="button" className={styles.button}>
+                            <Link href="/Mapas">
+                                <a>Finalizar Ruta</a>
+                            </Link>
+                        </button>
                     </div>
                     <div>
                         <br />

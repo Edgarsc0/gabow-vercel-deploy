@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.scss'
-
+import Link from 'next/link'
 export default function index() {
   return (
     <div className={styles.container}>
@@ -41,10 +41,14 @@ export default function index() {
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
           </a>
-          <a href="/Registro" className={styles.card}>
-            <h2>Registro &rarr;</h2>
-            <p>Prueba de ruta a Registro</p>
-          </a>
+          <Link href="/Registro" >
+            <a 
+              className={styles.card}
+            >
+              <h2>Registro &rarr;</h2>
+              <p>Prueba de ruta a Registro</p>
+            </a>
+          </Link>
         </div>
       </main>
     </div>
