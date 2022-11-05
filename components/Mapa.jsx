@@ -3,6 +3,7 @@ import Head from 'next/head'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import { Icon } from 'leaflet'
 import styles from '../styles/Mapas.module.scss'
+import Link from 'next/link'
 
 const data = [
     {
@@ -48,7 +49,9 @@ const Mapa = () => {
                         <Marker key={item.id} position={[item.lat, item.lon]} icon={icon}>
                             <Popup>
                                 {item.name} <br />
-                                <a href="/Edificio">Ir a</a>
+                                <Link href="/Edificio">
+                                    <a>Ir a</a>
+                                </Link>
                             </Popup>
                         </Marker>
                     ))}
