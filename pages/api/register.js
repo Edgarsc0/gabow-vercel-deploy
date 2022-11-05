@@ -1,9 +1,9 @@
 import con from "./config.js";
-async function registrarUsuarios(req,res){
+function registrarUsuarios(req,res){
  
     try{
 
-        await con.connect();
+        con.connect();
         console.log("se conecto a la bd");
         
     }

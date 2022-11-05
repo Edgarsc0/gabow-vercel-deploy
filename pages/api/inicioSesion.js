@@ -3,13 +3,6 @@ import jwt from "jsonwebtoken";
 import {serialize} from 'cookie';
 
 function iniciarSesion(req,res){
-    try{
-        con.connect();
-        console.log("se conecto a la bd");        
-    }
-    catch(err){
-        console.log(err);
-    }
     const {id,psw}=req.body;
     console.log(id,psw);
     con.query(`select * from Usuarios where usu_correo = "${id}"`,(err,result)=>{
