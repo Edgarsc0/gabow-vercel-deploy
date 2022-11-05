@@ -2,11 +2,11 @@ const mysql = require('mysql2');
 
 const con = mysql.createConnection({
 
-    host:"containers-us-west-71.railway.app",
+    host:"containers-us-west-21.railway.app",
     user:"root",
-    password:"wywMqWqQni5APugohFYO",
+    password:"f7GLCHV3RhcicFj0ztZd",
     port:"6798",
-    database:"gabow"
+    database:"simapDB"
 
 })
 
